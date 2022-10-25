@@ -1,0 +1,43 @@
+<%- include('./includes/header.ejs') %>
+
+<%- include('./includes/navbar.ejs') %>
+
+<div class="container">
+  <div >
+      <div>
+        <h1>Agenda </h1>
+        <p> Contatos:</p>
+        <%- include('./includes/messages.ejs')%>
+
+        <% if(contatos.length>0){ %>
+        <div class="table-container">
+          <table >
+            <tr>
+              <th>nome</th>
+              <th>sobrenome</th>
+              <th>telefone</th>
+              <th>email</dd>
+            </tr>
+            <% contatos.forEach((contato)=>{ %>
+              <tr>
+                <td><%= contato.nome %> </td>
+                <td><%= contato.sobrenome %> </td>
+                <td><%= contato.telefone %> </td>
+                <td><%= contato.email %> </td>
+                <td><a href="/contato/index/<%= contato._id %>">Editar</a></td>
+                <td><a href="/contato/delete/<%= contato._id %>" class="text-danger">Excluir</a></td>
+              </tr>
+
+            <% })%>
+        </div>
+
+        <%} else{%>
+          <p >nenhum contato cadastrado</p>
+          <% } %>
+      </div>
+ 
+  </div>
+</div>
+
+   
+  <%- include('./includes/footer.ejs') %>

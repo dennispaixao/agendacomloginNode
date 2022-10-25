@@ -1,0 +1,28 @@
+.errorMessage{
+    color:red;
+}
+*{margin:0; padding:0; text-decoration: none; list-style: none; box-sizing: border-box;}
+
+.errorBorder{
+    border:red 1px solid;
+}
+
+.table-container{
+    width:100%;
+    text-align: center;
+    overflow-x: scroll;
+}
+.table-container table{
+    width:100%;
+}
+
+th, td{
+    text-align: left;
+    padding: 6px;
+    border:1px solid #ccc;
+}
+
+
+
+
+

@@ -1,0 +1,124 @@
+.menuSimplest *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.menuSimplest{
+
+    width:100%;
+    height:auto;
+    background:rgb(2, 97, 175);
+    display:flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+   
+}
+.menuSimplest .menu{
+    padding:10px;
+    display:flex;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    
+}
+.menuSimplest ul{
+    display:flex;
+
+    
+}
+.menuSimplest ul li{
+    display: flex;
+    list-style: none;
+    width:auto;
+    margin:0 7px 0 7px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menuSimplest ul li a{
+    color:rgb(240, 240, 240);
+  display:flex;
+  vertical-align: middle;
+  text-decoration: none;
+
+}
+.menuSimplest ul li a:hover{
+  color: rgb(2, 240, 14);
+  text-shadow: 1px 1px  rgb(46, 46, 46);
+}
+.menuSimplest .brand a{
+    color:white;
+    text-decoration: none;
+}
+.menuSimplest .brand{
+   
+    width:100px;
+    display:flex;
+    justify-content: center;
+    
+    align-items: center; 
+    margin-left: 24px;
+    padding: 0px 30px 0 30px;
+}
+.menuSimplest .items{
+    display:flex;
+    justify-content: right;
+    padding:0 24px 0 0;
+    text-align: right;
+
+}
+.menuSimplest .button{
+    width:55px;
+    height:55px;
+    background:rgb(224, 15, 15);
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px #333;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 24px 24px 0px;
+    cursor:pointer;
+ 
+
+}
+.menuSimplest .button div{
+   width:30px;
+   height:5px;
+   margin:3px;
+
+   border-radius: 10px;
+   background-color: #ddd; 
+}
+
+@media screen and (max-width: 690px) {
+   .menuSimplest{
+    flex-direction: column;
+
+  
+   }
+   .menuSimplest ul{
+    flex-direction: column;
+   }
+   .menuSimplest .menu{
+   
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+   }
+
+ 
+ 
+
+   .menuSimplest ul li a{
+    font-size: 30px;
+    margin:24px;
+   }
+}
+  
