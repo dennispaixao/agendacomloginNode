@@ -42,8 +42,7 @@ export default class Login{
 
         let errorsMessage = this.form.querySelectorAll('.errorMessage')
         if(errorsMessage !== null)errorsMessage.forEach(e=>{
-            e.classList.remove("errorMessage");
-            e.textContent="";
+            e.remove();
     });
 
     }
